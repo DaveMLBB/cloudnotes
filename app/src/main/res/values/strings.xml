@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">cloudenotes</string>
+    <string name="add_note">Add note</string>
+    <string name="note_title_hint">New title</string>
+    <string name="note_content_hint">Notes ...</string>
+    <string name="save">Save</string>
+    <string name="refresh_notes">Refresh notes</string>
+</resources>

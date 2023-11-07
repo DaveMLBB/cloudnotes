@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- RecyclerView per mostrare la lista delle note -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:listitem="@layout/note_item" />
+
+    <!-- FloatingActionButton per aggiungere nuove note -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add_note"
+        android:src="@drawable/ic_add_36"
+        app:fabSize="normal" />
+
+    <!-- New FloatingActionButton per aggiornare la lista delle note -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_refresh_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fab_add_note"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_refresh_36"
+        app:fabSize="normal"
+        android:contentDescription="@string/refresh_notes" />
+</RelativeLayout>
